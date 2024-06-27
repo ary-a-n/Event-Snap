@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="form-group">
+    <form action="/submit-event" method="POST" enctype="multipart/form-data">
+        <label for="Ename">Event Name:</label>
+        <input type="text" id="Ename" name="Ename"><br><br>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br><br>
+        
+        <label for="E_coordinator">Coordinator Name:</label>
+        <input type="text" id="E_coordinator" name="E_coordinator"><br><br>
+        
+        <label for="E_number">Contact info:</label>
+        <input type="text" id="E_number" name="E_number"><br><br>
+        
+        <label for="image">Upload the images:</label>
+        <input type="file" id="image" name="image" multiple><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

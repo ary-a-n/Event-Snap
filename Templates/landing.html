@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block head %}
+<title>EventSnap</title>
+{% endblock %}
+
+{% block body %}
+    <div class="w_content">
+        <p>
+            Welcome to our exclusive platform, designed to streamline event management for our esteemed employees!
+            Here, at our specialized event submission website, we prioritize efficiency and convenience. 
+            Our sole purpose is to facilitate the seamless flow of event details from our dedicated team to 
+            our talented event organizers.
+            With our user-friendly interface, you can effortlessly upload event pictures, provide event specifics, 
+            and send inquiries directly to our event management experts. 
+            Your contributions play a pivotal role in shaping memorable experiences for our clients.
+            We appreciate your commitment to excellence and look forward to receiving your valuable event data.
+            Thank you for choosing us as your trusted event partner."
+        </p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/user.jpg') }}" class="card-img-top" alt="Customer picture">
+            <div class="card-content">
+                <a href="{{ url_for('customer') }}" class="btn btn-primary">Customer Inquiry</a>
+                <p class="card-text"><b>Submit the customer details here.</b></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/user2.jpg') }}" class="card-img-top" alt="Event picture">
+            <div class="card-content">
+                <a href="{{ url_for('eventer') }}" class="btn btn-primary">Event Submission</a>
+                <p class="card-text"><b>Submit the event picture and details here.</b></p>
+            </div>
+        </div>
+    </div>
+    
+    
+{% endblock  %}

@@ -1,0 +1,194 @@
+body {
+  font-family: "sans-serif";
+  color: rgb(255, 79, 0);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  padding: 7px;
+}
+body header h1 {
+  text-align: left;
+  font-size: 75px;
+  margin: 0;
+}
+body footer {
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container nav ul {
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.container nav ul li:first-child {
+  margin-left: 0;
+}
+.container nav ul li a {
+  color: rgb(255, 79, 0);
+  text-decoration: none;
+}
+.container .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(237, 99, 36);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.container .btn:hover {
+  background-color: rgb(255, 81, 0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container h1 {
+    font-size: 50px;
+  }
+  .container nav ul {
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+  }
+  .container nav ul li {
+    margin: 10px 0;
+  }
+  .container nav ul a {
+    font-size: 16px;
+  }
+}
+.w_content {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  /* Use flexbox for the container */
+  gap: 20px;
+  /* Add space between the cards */
+}
+
+.card {
+  border: 1px solid black;
+  /* Add border around the card */
+  border-radius: 8px;
+  /* Add border radius for rounded corners */
+  margin: auto;
+  padding: 20px;
+  width: 300px;
+  /* Set a specific width for the card */
+  display: inline-block;
+  /* Prevent card from taking the full width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(237, 99, 36);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card .btn:hover {
+  background-color: rgb(255, 81, 0);
+}
+.card .card-text {
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+}
+.card .card-img-top {
+  width: 100%;
+  /* Make the image fill the width of the card */
+  border-radius: 8px 8px 0 0;
+  /* Add rounded corners only to the top of the image */
+}
+
+.form-group {
+  color: white;
+  font-size: 25 px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 16px;
+  display: inline-block;
+}
+.form-group form label {
+  display: block;
+}
+.form-group form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 5vh;
+  gap: 10px;
+  max-width: 1200px;
+  /* Maximum width for the footer container */
+  margin: auto;
+  /* Center the footer container */
+  width: 100%;
+  /* Make the width 100% of the viewport width */
+}
+footer .footer-container .social-icons {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-container .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+footer .footer-container .social-icons a:hover {
+  color: #ff6347;
+}
+footer p {
+  margin: 0;
+  /* Ensure no additional margin is added */
+}/*# sourceMappingURL=styles.css.map */

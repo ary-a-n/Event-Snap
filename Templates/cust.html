@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="form-group">
+    <form action="/submit-customer"  method="POST" enctype="multipart/form-data">        
+        <label for="Date">Enter date:</label>
+        <input type="text" id="Date" placeholder ="DD/MM/YYY" name="Date"><br><br>
+        
+        <label for="Dname">Dealership Name:</label>
+        <input type="text" id="Dname" name="Dname"><br><br>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br><br>
+        
+        <label for="Customer_N">Customer Name:</label>
+        <input type="text" id="Customer_N" name="Customer_N"><br><br>
+        
+        <label for="number">Mobile No.:</label>
+        <input type="text" id="number" name="number"><br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" placeholder="M/F/Others" name="gender"><br><br>
+        
+        <label for="job">Occupation:</label>
+        <input type="text" id="job" name="job"><br><br>
+        
+        <label for="interest">Interested in Vehicle:</label>
+        <input type="text" id="interest" placeholder="Yes/NO" name="interest"><br><br>
+
+        <label for="Image">Upload the images:</label>
+        <input type="file" id="Image" name="Image" multiple><br><br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</div>
+{% endblock  %}

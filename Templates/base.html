@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css' )}}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo-blck.png') }}" type="image/x-icon">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <div class = " container">
+            <h1> Event-Snap </h1>
+            <nav>
+                <ul>
+                  <li><a class="btn btn-primary" href="{{ url_for('index') }}">Home</a></li>
+                  <li><a class="btn btn-primary" href="https://cynormedia.com">About</a></li>
+                  <li><a class="btn btn-primary" href="https://cynormedia.com/services/">Services</a></li>
+                  <li><a class="btn btn-primary" href="https://cynormedia.com/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    {% block body %}{% endblock %} 
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy;2024 Cynor Media. All Rights Reserved.</p>
+            <script src="https://kit.fontawesome.com/b9110e53c6.js" crossorigin="anonymous"></script>
+        </div>
+    </footer>        
+</body>
+</html>

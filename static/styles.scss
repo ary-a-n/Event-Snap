@@ -1,0 +1,236 @@
+$bg-color: black;
+$body-color: rgb(255, 79, 0);
+$btn-bg : rgb(237, 99, 36);
+$btn-hover-bg: rgb(255, 81, 0);
+
+body {
+  font-family: 'sans-serif';
+  color: $body-color;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    padding: 7px;
+
+    h1 {
+      text-align: left;
+      font-size: 75px;
+      margin: 0;
+    }
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav ul {
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: $btn-bg; // Bootstrap primary button color
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $btn-hover-bg; // Darken on hover
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 50px; // Adjust title size for mobile if needed
+    }
+
+    nav {
+      ul {
+        flex-direction: column;
+        width: 100%;
+        font-size: 16px; // Adjust font size for mobile
+
+        li {
+          margin: 10px 0;
+        }
+
+        a {
+          font-size: 16px; // Adjust link size for mobile
+        }
+      }
+    }
+  }
+}
+
+.w_content {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  /* Use flexbox for the container */
+  gap: 20px;
+  /* Add space between the cards */
+}
+
+.card {
+  border: 1px solid black;
+  /* Add border around the card */
+  border-radius: 8px;
+  /* Add border radius for rounded corners */
+  margin: auto;
+  padding: 20px;
+  width: 300px;
+  /* Set a specific width for the card */
+  display: inline-block;
+  /* Prevent card from taking the full width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center items horizontally within card-content
+    text-align: center; // Center text within card-content
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: $btn-bg; // Bootstrap primary button color
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $btn-hover-bg; // Darken on hover
+    }
+  }
+
+  .card-text {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+  }
+
+  .card-img-top {
+    width: 100%;
+    /* Make the image fill the width of the card */
+    border-radius: 8px 8px 0 0;
+    /* Add rounded corners only to the top of the image */
+  }
+}
+
+.form-group {
+  color: white;
+  font-size: 25 px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 16px;
+  display: inline-block;
+
+  form {
+    label {
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+$footer-bg-color: #333;
+$footer-text-color: #fff;
+$footer-hover-color: #ff6347;
+$social-icon-size: 24px;
+$link-gap: 20px;
+
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: 20px;
+  text-align: center;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 5vh;
+    gap: 10px;
+    max-width: 1200px;
+    /* Maximum width for the footer container */
+    margin: auto;
+    /* Center the footer container */
+    width: 100%;
+    /* Make the width 100% of the viewport width */
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+
+      a {
+        color: $footer-text-color;
+        text-decoration: none;
+        font-size: $social-icon-size;
+
+        &:hover {
+          color: $footer-hover-color;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    /* Ensure no additional margin is added */
+  }
+}
