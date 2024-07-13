@@ -1,8 +1,7 @@
 # Event Snap
 
-Event Snap is a Flask-based website designed and developed to help 100 employees gather and manage event data and customer leads. This project improves data handling efficiency by 25%.
-### Note: (Currently in development)
-- Previously, my website was fully deployed and operational, but we are now working on new features and optimizations.
+Event Snap is a Flask-based website designed and developed to help employees gather and manage event data and customer leads.
+### Note: (Currently in development): Current goal is to make this website dynamic.
 ## Features
 
 - Event data management
@@ -11,9 +10,9 @@ Event Snap is a Flask-based website designed and developed to help 100 employees
 
 ## Technologies Used
 
-- **Backend:** Flask
-- **Frontend:** HTML, CSS (Sass)
-- **Database:** SQLAlchemy
+- **Backend:** ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+- **Frontend:** ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+- **Database:** SQLAlchemy - ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ## Getting Started
 
